@@ -1,0 +1,1368 @@
+.credit {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+* .btn-orange {
+  border: 1px solid #f62;
+  color: #f62;
+  transition: all 0.3s linear;
+}
+* .btn-orange:hover {
+  background-color: #f62;
+  color: #f8fbfd;
+}
+* .color-primary {
+  color: #f62;
+}
+* a {
+  color: #374048;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+* a:hover {
+  color: #f62;
+}
+* .size-img {
+  width: 100%;
+  height: 300px;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background: #f8fbfd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  height: 70px;
+}
+nav .logo span {
+  transition: all 0.3s ease;
+}
+nav .logo span:hover {
+  color: #f62;
+}
+nav .links {
+  padding-top: 20px;
+}
+nav .links ul {
+  display: flex;
+  align-items: center;
+}
+nav .links ul li {
+  margin-right: 20px;
+}
+nav .links ul li a {
+  font-size: 15px;
+  position: relative;
+}
+nav .links ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  background: #374048;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s linear;
+}
+nav .links ul li a:hover::after {
+  content: "";
+  width: 70%;
+  height: 3px;
+  position: absolute;
+  background: #374048;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav #btn-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+@media (max-width: 950px) {
+  nav {
+    position: relative;
+  }
+  nav .links {
+    position: fixed;
+    top: 11%;
+    width: 100%;
+    left: 0;
+    transition: 0.2s linear;
+  }
+  nav .links ul {
+    margin-top: 30px;
+    width: 100%;
+  }
+  nav .links ul li {
+    padding-bottom: 20px;
+    display: none;
+  }
+  nav .links ul li a {
+    color: #f8fbfd;
+  }
+  nav .links ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: #374048;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s linear;
+  }
+  nav .links ul li a:hover::after {
+    content: "";
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    background: #f8fbfd;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  nav .links ul li a:hover {
+    color: #f62;
+  }
+  nav #btn-menu {
+    display: block;
+    color: #f62;
+    transition: 0.2s linear;
+  }
+  nav #btn-menu.fa-times-rectangle {
+    transform: rotate(180deg);
+  }
+  nav .active {
+    align-items: center;
+    transform: translateY(20px);
+    background-color: #4e575f;
+  }
+  nav .active ul {
+    display: block;
+  }
+  nav .active ul li {
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+  }
+}
+
+.carousel {
+  margin-top: 5% !important;
+}
+
+.row .col .card {
+  transition: all 0.3s;
+}
+.row .col .card:hover {
+  box-shadow: 0 2px 8px 5px #f62;
+}
+
+.airpods-hero {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.airpods-hero img {
+  width: 60%;
+  height: auto;
+}
+.airpods-hero .content {
+  width: 600px;
+  margin-left: 5%;
+}
+.airpods-hero .content h2 {
+  font-size: 40px;
+  position: relative;
+  color: #374048;
+}
+.airpods-hero .content h2::after {
+  content: " ";
+  width: 10%;
+  height: 3px;
+  color: #f62;
+  position: absolute;
+  bottom: 10px;
+  background-color: #f62;
+  transform: translateX(30%);
+}
+.airpods-hero .content h1 {
+  font-size: 50px;
+  margin: 5% 0;
+  color: #f62;
+}
+.airpods-hero .content p {
+  font-size: 20px;
+  margin-bottom: 10%;
+  color: #4e575f;
+}
+@media (max-width: 1000px) {
+  .airpods-hero .content {
+    margin-top: 10%;
+    width: 500px;
+    margin-left: 5%;
+  }
+  .airpods-hero .content h2 {
+    font-size: 30px;
+    position: relative;
+    color: #374048;
+  }
+  .airpods-hero .content h2::after {
+    content: " ";
+    width: 10%;
+    height: 3px;
+    color: #f62;
+    position: absolute;
+    bottom: 10px;
+    background-color: #f62;
+    transform: translateX(30%);
+  }
+  .airpods-hero .content h1 {
+    font-size: 40px;
+    color: #f62;
+    margin: 5% 0;
+  }
+  .airpods-hero .content p {
+    font-size: 15px;
+    margin-bottom: 10%;
+    color: #4e575f;
+  }
+}
+@media (max-width: 800px) {
+  .airpods-hero {
+    display: block;
+  }
+  .airpods-hero img {
+    width: 100%;
+  }
+  .airpods-hero .content {
+    width: 90%;
+    margin: 5% auto;
+    text-align: center;
+  }
+  .airpods-hero .content h2 {
+    font-size: 25px;
+    position: relative;
+    color: #374048;
+  }
+  .airpods-hero .content h2::after {
+    content: " ";
+    width: 10%;
+    height: 3px;
+    color: #f62;
+    position: absolute;
+    bottom: 10px;
+    background-color: #f62;
+    transform: translateX(30%);
+  }
+  .airpods-hero .content h1 {
+    font-size: 30px;
+    color: #f62;
+    margin: 5% 0;
+  }
+  .airpods-hero .content p {
+    font-size: 15px;
+    margin-bottom: 10%;
+    color: #4e575f;
+  }
+}
+
+.about-airpods {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.about-airpods .about-pic {
+  width: 400px;
+  transform: rotate(15deg) scale(1.2);
+  border-radius: 90px;
+  height: 350px;
+  margin-bottom: 30px;
+}
+.about-airpods .about {
+  width: 500px;
+  margin: 0 auto;
+}
+.about-airpods .about h1 {
+  font-size: 50px;
+  color: #f62;
+}
+.about-airpods .about h2 {
+  font-size: 40;
+  position: relative;
+}
+.about-airpods .about h2::after {
+  content: "";
+  position: absolute;
+  background-color: #f62;
+  width: 20%;
+  height: 3px;
+  bottom: 10px;
+  transform: translateX(8%);
+}
+.about-airpods .about h5 {
+  padding: 15px;
+  font-size: 25px;
+  padding-left: 40px;
+  position: relative;
+  transition: 0.3s linear;
+}
+.about-airpods .about h5 i {
+  position: absolute;
+  top: 32%;
+  left: 0;
+}
+.about-airpods .about h5:hover {
+  transform: translateX(30px);
+}
+@media (max-width: 1000px) {
+  .about-airpods {
+    display: block;
+    text-align: center;
+  }
+  .about-airpods .about-pic {
+    width: 400px;
+    transform: rotate(0deg) scale(1.2);
+    border-radius: 50px;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+  .about-airpods .about {
+    width: 431px;
+    margin-top: 30px;
+  }
+  .about-airpods .about h1 {
+    font-size: 40px;
+    color: #f62;
+  }
+  .about-airpods .about h2 {
+    font-size: 40;
+    position: relative;
+  }
+  .about-airpods .about h2::after {
+    content: "";
+    position: absolute;
+    background-color: #f62;
+    width: 15%;
+    height: 3px;
+    bottom: 10px;
+    transform: translateX(8%);
+  }
+  .about-airpods .about h5 {
+    padding: 15px;
+    font-size: 25px;
+    padding-left: 25px;
+    position: relative;
+  }
+  .about-airpods .about h5 i {
+    position: absolute;
+    top: 32%;
+    left: 0;
+  }
+}
+
+.airpods-products {
+  margin-top: 5%;
+}
+
+.title-airpods {
+  color: #f62;
+  position: relative;
+  margin-bottom: 5%;
+}
+.title-airpods::after {
+  content: "";
+  background: #4e575f;
+  width: 30%;
+  height: 4px;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+.title-airpods::before {
+  content: "";
+  background: #4e575f;
+  width: 30%;
+  height: 4px;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+
+.headphone-hero {
+  background-color: #212121;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.headphone-hero .col {
+  width: 50%;
+}
+.headphone-hero .col img {
+  width: 100%;
+  -webkit-animation: slide-left 1.5s linear;
+          animation: slide-left 1.5s linear;
+}
+.headphone-hero .col .content {
+  width: 500px;
+  color: #f8fbfd;
+  margin: 0 auto;
+  -webkit-animation: slide-up 1s ease;
+          animation: slide-up 1s ease;
+}
+.headphone-hero .col .content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  background: #212121;
+  background-image: url("/images/back.png");
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-animation: animate 20s linear;
+          animation: animate 20s linear;
+}
+@-webkit-keyframes animate {
+  100% {
+    background-position: 5000px 0;
+  }
+}
+@keyframes animate {
+  100% {
+    background-position: 5000px 0;
+  }
+}
+.headphone-hero .col .content p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.headphone-hero .col .content a {
+  background-color: #e12b1d;
+  color: #f8fbfd;
+  padding: 15px;
+  border-radius: 15px;
+}
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slide-up {
+  0% {
+    transform: translateY(1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 1000px) {
+  .headphone-hero .col {
+    width: 50%;
+  }
+  .headphone-hero .col img {
+    width: 100%;
+  }
+  .headphone-hero .col .content {
+    width: 400px;
+    color: #f8fbfd;
+    margin: 0 auto;
+  }
+  .headphone-hero .col .content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    background: #212121;
+    background-image: url("/images/back.png");
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-animation: animate 20s linear;
+            animation: animate 20s linear;
+  }
+  @-webkit-keyframes animate {
+    100% {
+      background-position: 3000px 0;
+    }
+  }
+  @keyframes animate {
+    100% {
+      background-position: 3000px 0;
+    }
+  }
+  .headphone-hero .col .content p {
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+  .headphone-hero .col .content a {
+    background-color: #e12b1d;
+    color: #f8fbfd;
+    padding: 15px;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 929px) {
+  .headphone-hero {
+    display: block;
+  }
+  .headphone-hero .col {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .headphone-hero .col img {
+    width: 350px;
+  }
+  .headphone-hero .col .content {
+    text-align: center;
+    width: 600px;
+    color: #f8fbfd;
+  }
+  .headphone-hero .col .content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    background: #212121;
+    background-image: url("/images/back.png");
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-animation: animate 20s linear;
+            animation: animate 20s linear;
+    margin-bottom: 20px;
+  }
+  @-webkit-keyframes animate {
+    100% {
+      background-position: 3000px 0;
+    }
+  }
+  @keyframes animate {
+    100% {
+      background-position: 3000px 0;
+    }
+  }
+  .headphone-hero .col .content p {
+    display: none;
+  }
+  .headphone-hero .col .content a {
+    background-color: #e12b1d;
+    color: #f8fbfd;
+    padding: 10px;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 585px) {
+  .headphone-hero {
+    display: block;
+    height: 115vh;
+  }
+  .headphone-hero .col {
+    width: 90%;
+  }
+  .headphone-hero .col img {
+    width: 100%;
+  }
+  .headphone-hero .col .content {
+    text-align: center;
+    width: 300px;
+    color: #f8fbfd;
+  }
+  .headphone-hero .col .content h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    background: #212121;
+    background-image: url("/images/back.png");
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-animation: animate 20s linear;
+            animation: animate 20s linear;
+    margin-bottom: 20px;
+  }
+  @-webkit-keyframes animate {
+    100% {
+      background-position: 3000px 0;
+    }
+  }
+  @keyframes animate {
+    100% {
+      background-position: 3000px 0;
+    }
+  }
+  .headphone-hero .col .content p {
+    display: none;
+  }
+  .headphone-hero .col .content a {
+    background-color: #e12b1d;
+    color: #f8fbfd;
+    padding: 10px;
+    border-radius: 15px;
+  }
+}
+
+.features {
+  text-align: center;
+  margin-top: 3em;
+  width: 100%;
+}
+.features .title {
+  margin: 0 auto;
+}
+.features .title h3 {
+  font-size: 3em;
+}
+.features .title p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.features .for-slick-slider .items {
+  width: 100%;
+  height: 600px;
+  transition: all 0.5s ease-out;
+}
+.features .for-slick-slider .items:hover {
+  background-color: white;
+  opacity: 0.7;
+}
+.features .for-slick-slider .items img {
+  width: 100%;
+  height: 100%;
+}
+.features .for-slick-slider .items .card-title h2 {
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.features .for-slick-slider .items .card-title h2:hover {
+  color: #c29958;
+}
+.features .product {
+  margin-bottom: 3em;
+}
+.features .product i {
+  font-size: 2em;
+  color: #e12b1d;
+  margin-bottom: 0.6em;
+  transition: all 0.3s linear;
+}
+.features .product i:hover {
+  color: #374048;
+}
+.features .product h3 {
+  font-size: 1.2em;
+}
+
+.headphone-video .video-container {
+  overflow: hidden;
+  width: 100%;
+  height: 515px;
+}
+.headphone-video .video-container video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.count-up {
+  width: 100%;
+  margin: 20px 0;
+  color: #f8fbfd;
+  display: flex;
+  justify-content: center;
+}
+.count-up .num1 {
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  padding: 20px;
+  background-color: #4e575f;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-bottom: 10px solid #e12b1d;
+}
+.count-up .num1 i {
+  font-size: 2em;
+}
+
+.headphone-product {
+  width: 100%;
+}
+.headphone-product .col-lg-3 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.headphone-product img {
+  width: 100%;
+}
+.headphone-product .col1 {
+  -webkit-animation: slide-img 1s linear;
+          animation: slide-img 1s linear;
+}
+.headphone-product .col2 {
+  -webkit-animation: slide-img 1.25s linear;
+          animation: slide-img 1.25s linear;
+}
+.headphone-product .col3 {
+  -webkit-animation: slide-img 1.75s linear;
+          animation: slide-img 1.75s linear;
+}
+.headphone-product .col-4 {
+  -webkit-animation: slide-img 2s linear;
+          animation: slide-img 2s linear;
+}
+@-webkit-keyframes slide-img {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-img {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.product-shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.product-shop .content-product {
+  width: 50%;
+  padding: 15px;
+}
+.product-shop .content-product h5 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.product-shop .content-product a {
+  background-color: #e12b1d;
+  padding: 10px;
+  color: #f8fbfd;
+}
+.product-shop .img-product {
+  width: 500px;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .product-shop {
+    flex-direction: column;
+  }
+  .product-shop .content-product {
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+  }
+  .product-shop .content-product p {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .product-shop {
+    flex-direction: column;
+  }
+  .product-shop .content-product {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid red;
+  }
+  .product-shop .content-product p {
+    display: none;
+  }
+  .product-shop .img-product {
+    width: 300px;
+  }
+}
+
+.vr-hero {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.vr-hero .box {
+  width: 600px;
+  height: 680px;
+  position: relative;
+  background-color: #17144d;
+  margin-top: 15%;
+}
+.vr-hero .box img {
+  position: absolute;
+  top: -100px;
+  right: 12px;
+  width: 100%;
+  height: auto;
+}
+.vr-hero .content {
+  padding: 50px;
+}
+.vr-hero .content h5 {
+  font-size: 25px;
+  color: #17144d;
+}
+.vr-hero .content h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.vr-hero .content p {
+  font-size: 20px;
+  margin: 40px 0;
+}
+.vr-hero .content .get {
+  padding: 15px;
+  border: 1px solid #17144d;
+  margin-right: 20px;
+}
+.vr-hero .content .get:hover {
+  background-color: #17144d;
+  color: #f8fbfd;
+}
+.vr-hero .content .learn {
+  padding: 15px;
+  background-color: #17144d;
+  color: #f8fbfd;
+}
+.vr-hero .content .count-up2 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8fbfd;
+  display: flex;
+}
+.vr-hero .content .count-up2 .num1 {
+  text-align: center;
+  width: 185px;
+  height: 150px;
+  padding: 20px;
+  color: #374048;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-bottom: 10px solid #17144d;
+}
+.vr-hero .content .count-up2 .num1 i {
+  font-size: 1.75em;
+}
+.vr-hero .content .count-up2 .num1 h1 {
+  font-size: 2.5em;
+}
+.vr-hero .content .count-up2 .num1 p {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+}
+@media (max-width: 1138px) {
+  .vr-hero .content h5 {
+    font-size: 20px;
+    color: #17144d;
+  }
+  .vr-hero .content h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .vr-hero .content p {
+    font-size: 15px;
+    margin: 40px 0;
+  }
+}
+@media (max-width: 1000px) {
+  .vr-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .vr-hero .content h5 {
+    font-size: 20px;
+    color: #17144d;
+  }
+  .vr-hero .content h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .vr-hero .content p {
+    font-size: 15px;
+    margin: 40px 0;
+  }
+  .vr-hero .count-up2 {
+    width: 100%;
+    color: #f8fbfd;
+    display: flex;
+  }
+  .vr-hero .count-up2 .num1 {
+    text-align: center;
+    width: 185px;
+    height: 150px;
+    padding: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-bottom: 10px solid #17144d;
+  }
+  .vr-hero .count-up2 .num1 i {
+    font-size: 1.75em;
+  }
+  .vr-hero .count-up2 .num1 h1 {
+    font-size: 2.5em;
+  }
+  .vr-hero .count-up2 .num1 p {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+  }
+}
+@media (max-width: 630px) {
+  .vr-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .vr-hero .box {
+    width: 350px;
+    height: 419px;
+  }
+  .vr-hero .box img {
+    width: 350px;
+    margin-top: 18%;
+  }
+  .vr-hero .content h5 {
+    font-size: 20px;
+    color: #17144d;
+  }
+  .vr-hero .content h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .vr-hero .content p {
+    font-size: 15px;
+    margin: 40px 0;
+  }
+}
+
+.about {
+  width: 100%;
+  margin-top: 60px;
+}
+.about h5 {
+  font-size: 30px;
+  color: #17144d;
+}
+.about p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+.about h4 {
+  font-size: 20px;
+  transition: all 0.5s linear;
+}
+.about h4:hover {
+  transform: translateX(50px);
+}
+
+.vr-video {
+  margin: 60px 0;
+}
+.vr-video video {
+  width: 100%;
+  height: 512px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.watch-hero {
+  background-image: url("../images/access/watch/backgroundWatch.jpg");
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.watch-hero img {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+.watch-hero .content {
+  width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.watch-hero .content h1 {
+  font-size: 70px;
+  font-weight: 600;
+  color: #4e575f;
+}
+.watch-hero .content p {
+  font-size: 25px;
+}
+.watch-hero .content a {
+  padding: 15px;
+  background-color: #f62;
+  border-radius: 15px;
+  font-size: 25px;
+  color: #f8fbfd;
+  transition: all 0.3s linear;
+}
+.watch-hero .content a:hover {
+  background-color: #374048;
+}
+@media (max-width: 910px) {
+  .watch-hero .content {
+    width: 600px;
+    padding-top: 200px;
+  }
+  .watch-hero .content h1 {
+    font-size: 50px;
+  }
+  .watch-hero .content p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 404px) {
+  .watch-hero .content {
+    width: 400px;
+  }
+  .watch-hero .content h1 {
+    font-size: 35px;
+  }
+  .watch-hero .content p {
+    display: none;
+  }
+}
+@media (max-width: 596px) {
+  .watch-hero .content {
+    width: 400px;
+  }
+  .watch-hero .content h1 {
+    font-size: 35px;
+  }
+  .watch-hero .content p {
+    font-size: 15px;
+  }
+}
+
+.about {
+  margin-top: 100px;
+  position: relative;
+}
+.about .product-prop {
+  margin: 30px auto;
+  position: relative;
+  width: 400px;
+}
+.about .product-prop .click-me {
+  position: absolute;
+  top: 15%;
+  right: 16%;
+  font-size: 25px;
+  width: 30px;
+  padding: 5px;
+  color: #f8fbfd;
+  background-color: #374048;
+  border-radius: 40%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.about .product-prop .click-me:hover {
+  background-color: #e12b1d;
+  transform: scale(1.2);
+}
+.about .product-prop .click-me2 {
+  position: absolute;
+  bottom: 40%;
+  right: 38%;
+  font-size: 25px;
+  width: 30px;
+  padding: 5px;
+  color: #f8fbfd;
+  background-color: #374048;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.about .product-prop .click-me2:hover {
+  background-color: #e12b1d;
+  transform: scale(1.2);
+}
+.about .product-prop .click-me3 {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  font-size: 25px;
+  width: 30px;
+  padding: 5px;
+  color: #f8fbfd;
+  background-color: #374048;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.about .product-prop .click-me3:hover {
+  background-color: #e12b1d;
+  transform: scale(1.2);
+}
+.about .product-prop .click-me4 {
+  position: absolute;
+  bottom: 22%;
+  left: 0;
+  font-size: 25px;
+  width: 30px;
+  padding: 5px;
+  color: #f8fbfd;
+  background-color: #374048;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.about .product-prop .click-me4:hover {
+  background-color: #e12b1d;
+  transform: scale(1.2);
+}
+.about .prop1 {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  font-size: 30px;
+  color: #f62;
+  display: none;
+}
+.about .prop2 {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  font-size: 30px;
+  color: #f62;
+  display: none;
+}
+.about .prop3 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  font-size: 30px;
+  color: #f62;
+  display: none;
+}
+.about .prop4 {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  font-size: 30px;
+  color: #f62;
+  display: none;
+}
+.about .show-prop {
+  display: block;
+}
+@media (max-width: 990px) {
+  .about {
+    text-align: center;
+    margin-top: 15%;
+  }
+  .about img {
+    width: 250px;
+    height: 400px;
+  }
+  .about .product-prop {
+    margin-top: 80px;
+    margin: 30px auto;
+    position: relative;
+    width: 400px;
+  }
+  .about .product-prop .click-me {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    font-size: 25px;
+    width: 30px;
+    padding: 5px;
+    color: #f8fbfd;
+    background-color: #374048;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .about .product-prop .click-me2 {
+    position: absolute;
+    bottom: 40%;
+    right: 36%;
+    font-size: 25px;
+    width: 30px;
+    padding: 5px;
+    color: #f8fbfd;
+    background-color: #374048;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .about .product-prop .click-me3 {
+    position: absolute;
+    top: 30%;
+    left: 19%;
+    font-size: 25px;
+    width: 30px;
+    padding: 5px;
+    color: #f8fbfd;
+    background-color: #374048;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .about .product-prop .click-me4 {
+    position: absolute;
+    bottom: 22%;
+    left: 19%;
+    font-size: 25px;
+    width: 30px;
+    padding: 5px;
+    color: #f8fbfd;
+    background-color: #374048;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .about .prop1 {
+    position: absolute;
+    top: 7%;
+    right: 8%;
+    font-size: 23px;
+    color: #f62;
+    display: none;
+  }
+  .about .prop2 {
+    position: absolute;
+    bottom: -10%;
+    right: 10%;
+    font-size: 23px;
+    color: #f62;
+    display: none;
+  }
+  .about .prop3 {
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    font-size: 25px;
+    color: #f62;
+    display: none;
+  }
+  .about .prop4 {
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+    font-size: 23px;
+    color: #f62;
+    display: none;
+  }
+}
+
+.advantages {
+  margin-top: 15%;
+  width: 100%;
+}
+.advantages .col {
+  text-align: start;
+  margin: 0 auto;
+}
+.advantages .col h1 {
+  margin-bottom: 20%;
+  font-size: 30px;
+  transition: all 0.3s ease;
+}
+.advantages .col h1:hover {
+  transform: translateX(50px);
+}
+.advantages .col span {
+  padding-right: 20px;
+}
+
+form .form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+form .form-group i {
+  position: absolute;
+  padding: 10px;
+  font-size: 1.75rem !important;
+  color: #f62;
+}
+form .form-group .form-control {
+  padding-left: 50px !important;
+}
+
+.mobile {
+  display: none;
+}
+
+.cartProcess {
+  margin: 0 auto;
+  background-color: #faf8f8;
+  padding: 8px;
+  border-radius: 15px;
+  width: 600px;
+  text-align: center;
+}
+
+.personalPage {
+  margin: 0 auto;
+  width: 1000px;
+}
+.personalPage .pic {
+  text-align: center;
+}
+.personalPage .pic .userImg {
+  width: 350px;
+  height: 400px;
+}
+.personalPage .information {
+  text-align: center;
+  margin-top: 50px;
+}/*# sourceMappingURL=style.css.map */
